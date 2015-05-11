@@ -19,12 +19,23 @@
   margin-right: 200px;
 }
 
-h1{
-  font-size: 90px;
+#main-title{
+  font-size: 85px;
   color: white;
   font-family: 'Oswald', 'sans-serif';
-  margin-top: 185px;
+  margin-top: 170px;
   font-weight: 400;
+}
+
+h4 {
+font-size: 400%;
+border-top: 1px solid #AEB7BB;
+margin: 0;
+padding: 20px;
+font-weight: 400;
+color: #001842;
+font-family: 'Oswald', 'sans-serif';
+text-align: center;
 }
 
 .main-header {
@@ -37,20 +48,15 @@ h1{
   float: right;
 }
 
-p {
-  text-align: center;
-  margin-top: 5px;
-  font-size: 12px;
-  font-family: Open-Sans;
-}
-
 
 #blog{
   display: inline-block;
   width: 809px;
   height: 1002px;
-  border: solid;
-  border-color: black;
+}
+
+p{
+  margin: 20px;
 }
 
 section {
@@ -64,8 +70,6 @@ section {
   display: inline-block;
   width: 479px;
   height: 1002px;
-  border: solid;
-  border-color: black;
   float: right;
 }
 
@@ -82,9 +86,31 @@ ul: {
   padding: 0;
 }
 
+.image-container {
+  display: inline-block;
+  position: relative;
+}
+
+.image-container::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 255, .4);
+}
+
+.image-container:hover::after {
+    background-color: rgba(0, 0, 0, 0);
+}
+
 footer {
   width: 1300px;
+  height: 96px;
   margin: 0;
+  background-color: #0A3451;
 }
 #pic-row {
   width:1300px;
@@ -94,4 +120,8 @@ footer {
 
 section div {
   display: inline-block;
+}
+
+span {
+  vertical-align: center;
 }
